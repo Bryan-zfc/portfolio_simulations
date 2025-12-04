@@ -6,13 +6,13 @@ from math import sqrt
 
 #Portfolia data
 tickers = ["ABN.AS","ASML.AS","KPN.AS","UNA.AS"] 
-weights = np.array([0.1,0.5,0.2,0.2])
+weights = np.array([0.1,0.5,0.2,0.2]) #Should sum to 1
 initial_value = 20_000
 
 #Start and end dates of data, time horizon and number of simulations
 startDate = "2020-01-01"
 endDate = None
-time_horizon = 30
+time_horizon = 250
 n_sims = 10000
 
 #Fetch prices and percentual changes between days
