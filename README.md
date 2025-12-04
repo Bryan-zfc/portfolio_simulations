@@ -13,7 +13,7 @@ We calculate the loss, the VaR and the ES. The VaR and the ES will be returned, 
 MC_brownian_simulation.py:
 This is similar, but instead of using randomly picked stock prizes from the past to bootstrap, I assume that the stock price S_t behives like a geometric Brownian motion, i.e.: dS_t = μ * S_t * dt + σ * S_t * dW_t. Here, W_t is a Brownian motion, μ is the (annualised) mean of the changes of the stock prices and σ the (annualised) variance. 
 
-If we discretise this, using dS/S = d(log S) (and ignoring a lot of the mathematical problems), then we obtain:
+If we discretise this, using d(logS) = dS/S - 1/(2*S^2) * dS * dS(and ignoring a lot of the mathematical problems), then we obtain:
 
 S_t+Δt =  S_t * exp( (μ -  σ^2 / 2) * Δt + σ * sqrt(Δt) * N(0,1) ) 
 
