@@ -12,7 +12,7 @@ initial_value = 20_000
 #Start and end dates of data, time horizon and number of simulations
 startDate = "2020-01-01"
 endDate = None
-time_horizon = 250
+time_horizon = 30
 n_sims = 10000
 
 #Fetch prices and percentual changes between days
