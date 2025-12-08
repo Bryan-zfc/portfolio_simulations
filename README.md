@@ -21,3 +21,8 @@ S_t+Δt =  S_t * exp( (μ -  σ^2 / 2) * Δt + σ * sqrt(Δt) * N(0,1) )
 where N(0,1) is a standard Gaussian. 
 
 We hence do a simulation by looking at the most recent stock prices, and simulation the behaviour using the formula above on what the prize will look like after the amount of horizon days. Then, we return the VaR, the ES and a histogram showing the simulated portfolio losses. 
+
+
+MC_GMB_correlated.py:
+
+This is almost the same as the model above, however, here we generate correlated normal random variables using the Cholesky decomposition of the covariance matrix. This decomposition, of a Hermition positive-definite matrix A, is A = L * L^{*}, such that L is a lower triangular matrix with real and positive diagonal entries. 
